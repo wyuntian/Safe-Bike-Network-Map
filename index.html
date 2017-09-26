@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <!-- CSS Imports -->
+    <link rel="stylesheet" href="http://libs.cartocdn.com/cartodb.js/v3/themes/css/cartodb.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/0.2.3/leaflet.draw.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Sidebar -->
+
+    <div class="sidebar">
+      <div id="shapes"></div>
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <h1 class="title">Safe Bike Network To Schools
+              </h1>
+              <br>
+              <h2 id="shuoming">The Safe Bike Network Map Application's primary purpose is to encourage school students to take bicycle as the means of
+              transporation to school, based on the bike network data provided by OpenDataPhilly.
+              <br></br>
+              However, recently, due to the frequent incidents in Philadelphia, parents worried about the safety of riding bicycle
+              to school instead of taking shuttle. The map application also provides the incidents information (purple circleMarker) during and around school time.
+              <br></br>
+              By dropping a marker on the map (maybe your neighborhood or the safest place you find according to incidents information), you can find the 10 nearest schools (blue circleMarker)
+                 and 1 nearest hospital (green circleMarker).
+                </h2>
+          </div>
+        </div>
+      </nav>
+      <div class="container-fluid">
+        <div id="button-container"></div>
+        <br>
+        <ul id="project-list" class="list-group">
+        </ul>
+      </div>
+    </div>
+    <!-- Map -->
+    <div id="map" class="map"></div>
+    <!-- Javascript Imports -->
+    <script src="js/underscore.js"></script>
+    <script src="js/torque.full.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script> -->
+    <script src="http://libs.cartocdn.com/cartodb.js/v3/cartodb.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/0.2.3/leaflet.draw.js"></script>
+    <script src="js/funcs.js"></script>
+    <script src="js/setup.js"></script>
+  </body>
+</html>

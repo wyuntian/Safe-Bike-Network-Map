@@ -1,0 +1,163 @@
+body {
+    padding: 0;
+    overflow: hidden;
+    font-family: helvetica, arial, sans-serif;
+}
+
+.map {
+    position: absolute;
+    right: 0px;
+    left: 0px;
+    height: 100%;
+    top: 0;
+}
+
+.sidebar {
+    position: absolute;
+    left: 0px;
+    width: 340px;
+    top: 0;
+    bottom: 0;
+    overflow-y: auto;
+    padding: 5px;
+    padding-bottom: 60px;
+    background-color: #595959;
+    opacity: 0.7;
+    z-index: 10
+}
+
+.item {
+    border: 0.8px solid #ccc;
+    border-color: #ff66cc;
+    padding: 2px;
+    cursor: pointer;
+    background-color: #ff66cc;
+    color: white;
+    font-size: 14px
+}
+
+.item:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.item-heading {
+    font-size: 18px;
+    margin-top: 0;
+    font-weight: bold;
+}
+
+.sort {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 340px;
+    background-color: #fff;
+    padding: 10px;
+}
+
+.sort-option {
+    margin-left: 10px;
+}
+
+.sort-option.selected {
+    border-bottom: 1px solid #ccc;
+}
+
+.sidebar nav.navbar-default {
+    border: 0;
+    border-radius: 0;
+    background-color: #595959;
+    /*border-bottom: 1px solid #eee;*/
+    margin: -1px -1px 1px;
+    padding: 0 1px;
+    left:25px;
+    top:15px;
+}
+
+.title{
+  font-size: 20px;
+  z-index: 100;
+  color:white;
+  opacity: 1;
+  color:#ffcc66
+}
+
+#shuoming{
+  font-size: 15px;
+  z-index: 100;
+  color:white;
+  opacity:1;
+  color:white;
+  margin-right: 23px
+}
+.navbar-brand {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.navbar-header{
+  background-color:  #595959;
+  color: white;
+  left: 50px;
+  z-index: 100
+}
+
+.leaflet-clickable {
+/*   transition: all .1s; */
+}
+
+.leaflet-popup-content-wrapper, .leaflet-popup-tip {
+  background: #e67e22;
+  border-radius: 0;
+  font-weight: bold;
+  color: #fff;
+}
+
+.leaflet-container a.leaflet-popup-close-button {
+  display: none;
+}
+
+.leaflet-popup-tip {
+  width: 11px;
+  height: 13px;
+  padding: 1px;
+}
+
+#button-container{
+  background-color:white;
+  margin-left: 25px;
+}
+
+#cartocss{
+  Map {
+-torque-frame-count:128;
+-torque-animation-duration:50;
+-torque-time-attribute:"dispatch_date";
+-torque-aggregation-function:"count(cartodb_id)";
+-torque-resolution:8;
+-torque-data-aggregation:linear;
+}
+
+#incidents_2014_copy{
+  comp-op: lighter;
+  marker-fill-opacity: 0.9;
+  marker-line-color: #A53ED5;
+  marker-line-width: 0.5;
+  marker-line-opacity: 0.9;
+  marker-type: ellipse;
+  marker-width: 4.5;
+  marker-fill: #7B00B4;
+}
+#incidents_2014_copy[frame-offset=1] {
+ marker-width:6.5;
+ marker-fill-opacity:0.45;
+}
+#incidents_2014_copy[frame-offset=2] {
+ marker-width:8.5;
+ marker-fill-opacity:0.225;
+}
+#incidents_2014_copy[frame-offset=3] {
+ marker-width:10.5;
+ marker-fill-opacity:0.15;
+}
+}
